@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+  }
+  
+  * {
+    font-family: "Manrope", sans-serif;
+    cursor: default;
+  }
+  .contenair{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .box {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .modal {
+    background-color: rgba(0, 0, 0, 0.367);
+    backdrop-filter: blur(2px);
+    height: 160px;
+    width: 300px;
+    border: 2px solid red;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    /* display: none; */
+  }
+  
+  .add-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #taskContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .taskCard {
+    box-shadow: rgba(255, 0, 0, 0.472) 0px 1px 2px, rgba(255, 0, 0, 0.472)  0px -1px 2px, rgba(255, 0, 0, 0.472)  0px 3px 2px, rgba(255, 0, 0, 0.472)  0px 2px 3px, rgba(255, 0, 0, 0.472)  0px -3px 2px;
+    width: 220px;
+    height: 290px;
+    border-radius: 5px;
+    background-color: aliceblue;
+  }
+  .taskCard h2{
+   color: rgb(255, 85, 0);
+  }
+  li{
+    text-decoration: none;
+  }
+  .taskCard li button{
+    position: relative;
+    left: 70px;
+    margin-top: 5px;
+    width: 80px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 5px ;
+    background-color: greenyellow;
+
+  }
+  .taskCard .deletCardBtn{
+    width: 40px;
+    background-color: rgb(255, 85, 0);
+    /* margin-right: 20px; */
+    border-radius: 10%;
+    position: relative;
+    /* top: 150px;  */
+    left: 100px; 
+  }
+  .taskCard .addItemListBtn{
+    width: 45px;
+    /* background-color: rgb(5, 166, 247); */
+    /* margin-right: 20px; */
+    position: relative;
+    /* top: 150px;  */
+    left: 120px;
+  }
+
+  .taskTitle {
+    text-align: center;
+  }
+  #listPop{
+    background-color: rgba(0, 0, 0, 0.367);
+    backdrop-filter: blur(2px);
+    height: 160px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    display: none;
+  
+  }
+  .hide{
+    visibility: hidden;
+  }
+  .back{
+    /* visibility: hidden; */
+    width: 100px ;
+    border: 2px solid rgb(121, 112, 112);
+    border-radius: 5px;
+    height: 30px;
+    background-color: aliceblue;
+  }
+  li button{
+    /* margin-left: 5px; */
+    margin-right: 24px;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  #add-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal h2 {
+    text-align: center;
+    color: rgb(255, 85, 0);
+  }
+  .modal input{
+    width: 200px;
+    height: 22px;
+  }
+
+  .inputCon{
+    text-align: center;
+  }
+  .ItemBtn{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .ItemBtn button{
+    width: 100px;
+    height: 25px;
+    background-color: rgb(255, 85, 0);
+  }
+  
+  .pop-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .pop-container input{
+    width: 200px;
+    height: 22px;
+  }
+.pop-container h2{
+  text-align: center;
+    color: rgb(255, 85, 0);
+}
+  .inputCon{
+    text-align: center;
+  }
+  .listBtn{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .pop-container button{
+    width: 100px;
+    height: 25px;
+    background-color: rgb(255, 85, 0);
+  }
+
+  #singaleCard{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+  }
+
+  #CopeytitleTaskName{
+    position: relative;
+    left: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(213, 224, 224);
+
+  }
+  #add-option{
+    font-size: 30px;
+  }
+  @media (min-width:300px) and (max-width:600px){
+    .contenair{
+      height: 500vh;
+    }
+    .header{
+      display: block;
+      text-align: center;
+    }
+    #listPop{
+      top:150%;
+    }
+    #add-option{
+      display: flex;
+      justify-content: center;
+    }
+    .modal {
+      top: 50%;
+    }
+  }

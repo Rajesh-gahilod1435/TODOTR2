@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="contenair">
+    <div class="header">
+            <h1 id="taskheading">Taks <span>list</span></h1>
+            
+    <div id="add-option"><img src="./ADD-TODO.svg" width="30px" alt="">Add Task</div>
+</div>
+    <div id="modal" class="modal">
+        <!-- Modal content goes here -->
+    </div>      
+    <div id="parent">
+        <!-- No Taks add  -->
+        <h3 id="notask" class="par" style="color: white;" > No Item In the List</h3>
+        <button id="back"  onclick="back()"  class="back hide" >-Back</button>
+
+    <div id="taskContainer" class="task-container" >
+        <!-- Tasks will be displayed here -->
+    </div>
+
+    <div id="singaleCard" class="hide"><span id="CopeytitleTaskName"></span> </div>
+</div>
+    <div id="popContenair"  class="pop-container">
+        
+        <div id="listPop" ></div>
+        
+        <!-- Back Button -->
+    </div>
+    <script src="./todo.js"></script>
+</body>
+</html>
